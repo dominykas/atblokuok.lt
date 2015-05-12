@@ -13,7 +13,8 @@ bet žmonėms juos atsiminti sudėtinga. DNS yra sistema, kuri leidžia lengvai 
 Valdžia gali sudaryti adresų sąrašus, kurių negalima naudoti, t.y. DNS negrąžintų atitinkamo
 IP adreso ir vartotojo kompiuteris nežinotų į kurį serverį siųsti užklausą.
 
-Toks DNS blokavimas yra tolygus adresų lentelių nuėmimui nuo pastatų.
+Toks blokavimas yra tolygus adresų lentelių nuėmimui nuo pastatų, o jo apėjimas yra adresų 
+ieškojimas kituose šaltiniuose.
 
 * Normalu:
     - vartotojas serveriui: kur yra www.google.com?
@@ -30,12 +31,17 @@ Toks DNS blokavimas yra tolygus adresų lentelių nuėmimui nuo pastatų.
         - OpenDNS palaikomi: 208.67.222.222, 208.67.220.220, 208.67.222.220, 208.67.220.222
         - Susirask pats: https://www.google.com/search?q=public+dns+servers
         - Instrukcijos: TODO
+    - tinka ir žemiau pateikti sprendimai
 * Plačiau:
     - http://en.wikipedia.org/wiki/DNS_blocking
 
 ## IP blokavimas
 
+Tam, kad vartotojo kompiuteris galėtų pasiekti nutolusius serverius, duomenų paketas keliauja per
+kelis tarpinius taškus, kuriuose galima "sustabdyti" duomenų paketo kelionę link nutolusio IP adreso.
 
+Toks blokavimas yra tolygus kelių tarp dviejų taškų griovimui, o jo apėjimas yra keliavimas alternatyviais, 
+nors ir lėtesniais, maršrutais.
 
 * Normalu:
     - vartotojas serveriui: ei, 37.157.151.48, parodyk man www.google.com
@@ -47,29 +53,64 @@ Toks DNS blokavimas yra tolygus adresų lentelių nuėmimui nuo pastatų.
     - TODO
 * Kaip atblokuoti:
     - nemokama, nereikalauja specifinių žinių: naudoti proxy serverius. Minusas: veikimas
-      gali būti lėtas ir nepatikimas.
+      gali būti lėtas ir nepatikimas, nederėtų naudoti konfidencialiai informacijai išsiųsti
+      ar jungtis prie slaptažodžiu saugomų svetainių.
         - Susirask pats: https://www.google.com/search?q=free+proxy+servers
-    - TOR
-    - VPN
-    - SSH tunnel
+    - nemokama, nereikalauja specifinių žinių: naudoti pseudo-proxy servisus. Minusas: veikimas
+      gali būti lėtas ir nepatikimas, nederėtų naudoti konfidencialiai informacijai išsiųsti
+      ar jungtis prie slaptažodžiu saugomų svetainių, gali būti apkrauta reklamomis.
+        - Susirask pats: https://www.google.com/search?q=proxy+page
+    - nemokama, nereikalauja specifinių žinių: naudoti TOR. Minusas: veikia ypač lėtai, nederėtų
+      naudoti konfidencialiai informacijai išsiųsti ar jungtis prie slaptažodžiu saugomų svetainių.
+        - https://www.torproject.org
+    - TODO VPN
+    - TODO SSH tunnel
+    - TODO RDP
+    - TODO screen sharing
+    - kainuoja nedaug, reikalauja šiek tiek techninių žinių: susikurti savo pseudo-proxy servisą. 
+      Minusas: derėtų tinkamai apsaugoti, kad nepasinaudotų piktavaliai.
+        - Susirask pats: https://www.google.com/search?q=php+proxy+script
 
 ## Srauto analizė ir filtravimas
 
-TODO
+Sudaryti visų interneto šaltinių, kuriuose yra nepageidaujama informacija, sąrašą yra neįmanoma.
+Todėl ir blokavimas vien pagal šaltinio adresą ar kelią iki jo yra lengvai apeinamas tiek iš 
+informacijos teikėjo, tiek iš informacijos gavėjo pusės. Sudėtingi ir brangūs techniniai sprendimai 
+leidžia stebėti visą neužkoduota srautą ir priklausomai nuo jo turinio - automatiškai nutraukti 
+duomenų tiekimą. Esminis reikalavimas, kad tokia sistema veiktų - "atplėšinėti" absoliučiai visus 
+"laiškus".
+
+* Normalu:
+    - vartotojas serveriui: ei, 37.157.151.48, per www.google.com, surask man mielų kačiukų
+    - 37.157.151.48 vartotojui: prašom - štai keletas puikių paveiksliukų ir video įrašų
+* Blokuojama:
+    - vartotojas serveriui: ei, 37.157.151.48, per www.google.com, surask man mielų kačiukų
+    - Troll.gov MITM serveris: prašom - štai keletas puikių *ryšys nutrūko*
+* Kas naudoja:
+    - TODO
+    - Kinija
+* Kaip atblokuoti:
+    - naršyti tik koduotas svetaines (kreiptis išskirtinai per https)
+    - nekoduotoms svetainėms naudoti tarpinį koduotą ryšį (kaip ir aukščiau): VPN, SSH tunnel, Tor
+    - naudoti kodinius žodžius, keistis informacija abstrakčiais terminais
 
 ## Protokolų blokavimas / totalinė kontrolė
 
 Egzistuoja galimybė, kad valdžia visiškai užblokuoja tam tikrus protokolus, ypač tuos,
 kurie leidžia komunikaciją koduotais kanalais (VPN, SSH, TLS, RDP). Net nekalbant apie
-žmogaus teises toks blokavimas elementariai sužlugytų ekonomiką, nes būtų tolygus
-vien atvirlaiškių siuntinėjimui. Net Kinija to nedaro.
+žmogaus teises toks blokavimas elementariai sužlugytų ekonomiką, nes visi šie protokolai
+yra kas dieną naudojami tiek IT profesionalų darbui, tiek automatinei tarp-mašininei komunikacijai,
+tiek užtikrinti vidinių verslo duomenų saugumui. Net Kinija to nedaro. Kol kas.
+
+Toks blokavimas yra tolygus gyvenimui įkalinimo įstaigoje.
 
 * Normalu:
     - naudotojui prieinami visi protokolai ir duomenys
 * Blokuojama:
     - Troll.gov: tau nieko negalima daryti
 * Kaip atblokuoti:
-    - kurti alternatyvius tinklus
+    - kurti alternatyvius tinklus, pvz. susisiekti su draugais užsienyje per Skype ar Hangouts ir 
+      dalintis ekranu (screen sharing)
     - uždaryti verslą
     - išeiti į gatves
     - emigruoti
@@ -77,4 +118,7 @@ vien atvirlaiškių siuntinėjimui. Net Kinija to nedaro.
 # Šaltiniai
 
 * http://www.howtogeek.com/162092/htg-explains-how-the-great-firewall-of-china-works/
-* en.wikipedia.org/wiki/Internet_censorship_and_surveillance_by_country
+* http://en.wikipedia.org/wiki/Internet_censorship_and_surveillance_by_country
+* http://www.wikihow.com/Bypass-a-Firewall-or-Internet-Filter
+* http://www.howtogeek.com/167418/5-ways-to-bypass-internet-censorship-and-filtering/
+* Susirask pats: https://www.google.com/search?q=how+to+bypass+internet+filters
