@@ -27,6 +27,12 @@ ieškojimas kituose šaltiniuose.
     - Troll.gov DNS serveris vartotojui: nesakysiu
 * Kas naudoja:
     - Estija
+    - Belgija
+    - Danija
+    - Norvegija
+    - Švedija
+    - Šveicarija
+    - Turkija
 * Kaip atblokuoti:
     - nemokama, nereikalauja specifinių žinių: nenaudoti oficialių IPT DNS serverių, o naudoti 
       alternatyvius, pvz:
@@ -43,6 +49,10 @@ ieškojimas kituose šaltiniuose.
 Tam, kad vartotojo kompiuteris galėtų pasiekti nutolusius serverius, duomenų paketas keliauja per
 kelis tarpinius taškus, kuriuose galima "sustabdyti" duomenų paketo kelionę link nutolusio IP adreso.
 
+Kadangi kai kurios svetainės gali būti aptarnaujamos iš kelių adresų, o taipogi vienas adresas gali aptarnauti 
+kelias svetaines, šis blokavimo būdas ne visada užblokuoja visą "draudžiamą" turinį, o tuo pačiu dažnai 
+užblokuoja ir niekuo dėtas svetaines.
+
 Toks blokavimas yra tolygus kelių tarp dviejų taškų griovimui, o jo apėjimas yra keliavimas alternatyviais, 
 nors ir lėtesniais, maršrutais.
 
@@ -53,7 +63,12 @@ nors ir lėtesniais, maršrutais.
     - vartotojas serveriui: ei, 37.157.151.48, parodyk man www.google.com
     - Troll.gov MITM serveris: nėra tokio serverio
 * Kas naudoja:
-    - TODO
+    - Argentina
+    - Italija
+    - Kuba
+    - Naujoji Zelandija
+    - Pietų Korėja
+    - Turkija
 * Kaip atblokuoti:
     - visiškai nemokama ir nereikalauja jokių žinių: susisiekti su draugu per Skype ar Hangouts,
       pasidalinti ekranu (screen sharing). Minusas: draugai gali matyti kas vyksta.
@@ -100,8 +115,17 @@ duomenų tiekimą. Esminis reikalavimas, kad tokia sistema veiktų - "atplėšin
     - vartotojas serveriui: ei, 37.157.151.48, per www.google.com, surask man mielų kačiukų
     - Troll.gov MITM serveris: prašom - štai keletas puikių *ryšys nutrūko*
 * Kas naudoja:
-    - TODO
+    - Bahreinas
+    - Iranas
+    - Jemenas
+    - Jungtiniai Arabų Emyratai
+    - Kataras
     - Kinija
+    - Kuveitas
+    - Omanas
+    - Saudo Arabija
+    - Sudanas
+    - Tunisas
 * Kaip atblokuoti:
     - naršyti tik koduotas svetaines (kreiptis išskirtinai per https)
     - nekoduotoms svetainėms naudoti tarpinį koduotą ryšį (kaip ir aukščiau): VPN, SSH tunnel, Tor
@@ -115,6 +139,9 @@ kurie leidžia komunikaciją koduotais kanalais (VPN, SSH, TLS, RDP). Net nekalb
 yra kas dieną naudojami tiek IT profesionalų darbui, tiek automatinei tarp-mašininei komunikacijai,
 tiek užtikrinti vidinių verslo duomenų saugumui. Net Kinija to nedaro. Kol kas.
 
+Egipte vykusių 2011 m. protestų metu, internetas buvo išjungtas visiškai. Visiškas atjungimas taipogi
+yra taikytas Myanmare, Libijoje, Sirijoje.
+
 Toks blokavimas yra tolygus gyvenimui įkalinimo įstaigoje.
 
 * Normalu:
@@ -124,6 +151,7 @@ Toks blokavimas yra tolygus gyvenimui įkalinimo įstaigoje.
 * Kaip atblokuoti:
     - kurti alternatyvius tinklus, pvz. susisiekti su draugais užsienyje per Skype ar Hangouts ir 
       dalintis ekranu (screen sharing)
+    - keistis duomenimis fizinėse laikmenose
     - uždaryti verslą
     - išeiti į gatves
     - emigruoti
@@ -132,6 +160,7 @@ Toks blokavimas yra tolygus gyvenimui įkalinimo įstaigoje.
 
 * http://www.howtogeek.com/162092/htg-explains-how-the-great-firewall-of-china-works/
 * http://en.wikipedia.org/wiki/Internet_censorship_and_surveillance_by_country
+* http://en.wikipedia.org/wiki/Internet_censorship_circumvention
 * http://www.wikihow.com/Bypass-a-Firewall-or-Internet-Filter
 * http://www.howtogeek.com/167418/5-ways-to-bypass-internet-censorship-and-filtering/
 * Susirask pats: https://www.google.com/search?q=how+to+bypass+internet+filters
