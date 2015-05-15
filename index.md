@@ -30,7 +30,7 @@ ieškojimas kituose šaltiniuose.
         - Google palaikomi: 8.8.8.8, 8.8.4.4
         - OpenDNS palaikomi: 208.67.222.222, 208.67.220.220, 208.67.222.220, 208.67.220.222
         - Susirask pats: https://www.google.com/search?q=public+dns+servers
-        - Instrukcijos: TODO
+        - Instrukcijos: https://www.google.com/search?q=change+dns
     - tinka ir žemiau pateikti sprendimai
 * Plačiau:
     - http://en.wikipedia.org/wiki/DNS_blocking
@@ -52,6 +52,8 @@ nors ir lėtesniais, maršrutais.
 * Kas naudoja:
     - TODO
 * Kaip atblokuoti:
+    - visiškai nemokama ir nereikalauja jokių žinių: susisiekti su draugu per Skype ar Hangouts,
+      pasidalinti ekranu (screen sharing). Minusas: draugai gali matyti kas vyksta.
     - nemokama, nereikalauja specifinių žinių: naudoti proxy serverius. Minusas: veikimas
       gali būti lėtas ir nepatikimas, nederėtų naudoti konfidencialiai informacijai išsiųsti
       ar jungtis prie slaptažodžiu saugomų svetainių.
@@ -63,11 +65,19 @@ nors ir lėtesniais, maršrutais.
     - nemokama, nereikalauja specifinių žinių: naudoti TOR. Minusas: veikia ypač lėtai, nederėtų
       naudoti konfidencialiai informacijai išsiųsti ar jungtis prie slaptažodžiu saugomų svetainių.
         - https://www.torproject.org
-    - TODO VPN
-    - TODO SSH tunnel
-    - TODO RDP
-    - TODO screen sharing
-    - kainuoja nedaug, reikalauja šiek tiek techninių žinių: susikurti savo pseudo-proxy servisą. 
+    - mokama, lengvai konfigūruojama: naudoti VPN - užkoduotu būdu prisijungti prie paslaugos serverio,
+      o toliau internetas jau matomas iš jo - valdžia nemato kas vyksta iš tikrųjų.
+        - Susirask pats: https://www.google.com/search?q=vpn+providers
+    - mokama (nebent jau turite nutolusį serverį), reikalauja šiek tiek žinių: naudoti SSH tunelį 
+      ("poor man's VPN" - atidaryti užkoduotą kanalą ir į internetą kreiptis per jį).
+        - Susirask pats: https://www.google.com/search?q=ssh+tunnel
+        - https://github.com/apenwarr/sshuttle
+    - mokama (nebent jau turite nutolusį serverį), reiaklauja šiek tiek žinių: naudoti RDP/VNC, t.y.
+      prisijungti prie nutolusio kompiuterio ir naudoti jame esančią naršyklę, nesiunčiant tiesioginių
+      užklausų "oficialiais" kanalais. Minusas: gali veikti lėtai, nepamiršti užkoduoti ir pačio RDP/VNC
+      ryšio.
+        - Susirask pats: https://www.google.com/search?q=virtual+desktop+provider
+    - mokama, reikalauja techninių žinių: susikurti savo pseudo-proxy servisą. 
       Minusas: derėtų tinkamai apsaugoti, kad nepasinaudotų piktavaliai.
         - Susirask pats: https://www.google.com/search?q=php+proxy+script
 
