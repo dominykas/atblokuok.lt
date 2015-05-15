@@ -72,6 +72,9 @@ nors ir lėtesniais, maršrutais.
 * Kaip atblokuoti:
     - visiškai nemokama ir nereikalauja jokių žinių: susisiekti su draugu per Skype ar Hangouts,
       pasidalinti ekranu (screen sharing). Minusas: draugai gali matyti kas vyksta.
+    - būna ir nemokamai, nereikalauja jokių techninių žinių: naudoti "internetas į el. paštą" servisus.
+      Minusas: ribotas funkcionalumas, veikimo greitis, privatumas.
+        - Susirask pats: https://www.google.com/search?q=web+to+email
     - nemokama, nereikalauja specifinių žinių: naudoti proxy serverius. Minusas: veikimas
       gali būti lėtas ir nepatikimas, nederėtų naudoti konfidencialiai informacijai išsiųsti
       ar jungtis prie slaptažodžiu saugomų svetainių.
