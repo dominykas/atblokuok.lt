@@ -2,7 +2,10 @@
 layout: default
 ---
 
-# Kaip filtruojamas interneto turinys
+# Kaip atblokuoti interneto svetaines
+
+Atblokavimo būdai priklauso nuo blokavimo būdo, bet visi jie iš esmės susiveda į vieną principą:
+jeigu valdžia ką nors užblokavo, tai tereikia tiesiog pasirinkti alternatyvų, užkoduotą maršrutą.
 
 ## DNS blokavimas
 
