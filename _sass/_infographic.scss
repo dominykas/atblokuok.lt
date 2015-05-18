@@ -7,12 +7,18 @@ body {
 	font-family: 'Karla', sans-serif;
 }
 
-h1 {
+header {
+	background: $color-heading-bg;
 	text-align: center;
-	margin: 0;
 	padding: 2rem;
 	color: $color-heading;
-	background: $color-heading-bg;
+	p {
+		margin: 0.5rem;
+	}
+}
+
+h1 {
+	margin: 0;
 	font-family: 'PT Sans Caption', sans-serif;
 }
 
