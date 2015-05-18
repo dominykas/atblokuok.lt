@@ -1,0 +1,92 @@
+html {
+	font-size: 16px;
+}
+body {
+	background: $color-body-bg;
+	color: $color-body-fg;
+	font-family: 'Karla', sans-serif;
+}
+
+h1 {
+	text-align: center;
+	margin: 0;
+	padding: 2rem;
+	color: $color-heading;
+	background: $color-heading-bg;
+	font-family: 'PT Sans Caption', sans-serif;
+}
+
+h2 {
+	margin: 0;
+	color: $color-heading;
+	font-family: 'PT Sans Caption', sans-serif;
+}
+
+.fa {
+	color: $color-heading;
+}
+
+section {
+	padding: 1rem;
+	margin: 1rem;
+	background: $color-section-bg;
+	p {
+		font-family: 'Exo', sans-serif;
+		color: $color-2-b;
+	}
+}
+
+a {
+	color: $color-link;
+	text-decoration: none;
+	border-bottom: 1px dotted $color-link;
+	&:hover {
+		color: $color-link-hover;
+		border-bottom: none;
+	}
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	line-height: 2rem;
+}
+
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+input {
+	background: $color-input-bg;
+	color: $color-input;
+	border: 1px solid $color-input;
+	border-radius: 2px;
+	//margin: 0.25rem 0;
+	padding: 0.25rem;
+	width: 15rem;
+}
+
+footer {
+	text-align: center;
+	margin: 2rem;
+}
+
+
+@media (min-width: 40em) {
+	section {
+		position: relative;
+		ul {
+			width: 50%;
+		}
+		p {
+			position: absolute;
+			left: 50%;
+			right: 0;
+			padding: 0 1rem;
+			text-align: center;
+			margin: 0;
+		}
+	}
+}
