@@ -3,7 +3,7 @@ title: atblokuok.lt
 description: > # this means to ignore newlines until "baseurl:"
   Ką daryti, jeigu valdžia filtruoja internetą.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://atblokuok.lt" # the base hostname & protocol for your site
+url: "https://atblokuok.lt" # the base hostname & protocol for your site
 github_username: dominykas/atblokuok.lt
 
 # Build settings
